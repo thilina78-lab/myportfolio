@@ -582,7 +582,7 @@ function App() {
                   <div>
                     <p className="text-gray-600 font-semibold mb-1">Residence</p>
                     <p className="text-gray-800 font-semibold text-lg">40/A/15/4, Metro Homes, Malay Street</p>
-                    <p className="text-gray-800 font-semibold text-lg">Colombo 12, Sri Lanka</p>
+                    <p className="text-gray-800 font-semibold text-lg">Colombo 02, Sri Lanka</p>
                   </div>
                 </div>
               </div>
