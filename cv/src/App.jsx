@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Mail, Phone, MapPin, Award, Briefcase, GraduationCap, ChevronDown, Code2, Database, Network, Users, TrendingUp, Shield, MessageCircle } from 'lucide-react';
+import { Menu, X, Mail, Phone, MapPin, Award, Linkedin ,Briefcase, GraduationCap, ChevronDown, Code2, Database, Dock,Network, Users, TrendingUp, Shield, MessageCircle } from 'lucide-react';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -183,6 +183,7 @@ function App() {
     { name: "IT Infrastructure & Systems", level: 95, icon: Network },
     { name: "Database Management", level: 87, icon: Database },
     { name: "Software Development", level: 85, icon: Code2 },
+     { name: "Web & Mobile Application Development", level: 75, icon: Dock },
     { name: "Project Management", level: 90, icon: TrendingUp },
     { name: "High Level Procurements & Technical Evaluation", level: 85, icon: Code2 },
     { name: "Strategic Management", level: 88, icon: Shield },
@@ -264,7 +265,7 @@ function App() {
         <div className="max-w-7xl mx-auto text-center">
           <div className="space-y-6 animate-fade-in">
             <div className="flex justify-center">
-              <img className='h-44 w-44 rounded-full object-cover' src="./m2.jpg" alt="Thilina Rathnayake" />
+              <img className='h-60 w-60 shadow-2xl rounded-full border-4 border-blue-500 object-cover' src="./m2.jpg" alt="Thilina Rathnayake" />
             </div>
             <div className="inline-block px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold mb-4">
               Welcome to my portfolio
@@ -573,6 +574,18 @@ function App() {
                     </a>
                   </div>
                 </div>
+        {/* linkedin */}
+                <div className="flex items-start gap-4 group">
+                  <div className="bg-gradient-to-br from-blue-700 to-blue-700 p-4 rounded-xl group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
+                    <Linkedin className="text-white" size={28} />
+                  </div>
+                  <div>
+                    <p className="text-gray-600 font-semibold mb-1">Linked In</p>
+                    <a href="https://linkedin.com/in/thilina-rathnayake-551a731ba" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 font-semibold text-lg block">
+                      Thilina Rathnayake
+                    </a>
+                  </div>
+                </div>
 
                 {/* Location */}
                 <div className="flex items-start gap-4 group md:col-span-2">
@@ -582,7 +595,7 @@ function App() {
                   <div>
                     <p className="text-gray-600 font-semibold mb-1">Residence</p>
                     <p className="text-gray-800 font-semibold text-lg">40/A/15/4, Metro Homes, Malay Street</p>
-                    <p className="text-gray-800 font-semibold text-lg">Colombo 12, Sri Lanka</p>
+                    <p className="text-gray-800 font-semibold text-lg">Colombo 02, Sri Lanka</p>
                   </div>
                 </div>
               </div>
@@ -625,6 +638,9 @@ function App() {
               <div className="text-gray-400 hover:text-blue-400 transition-colors">
                 <MapPin size={24} />
               </div>
+               <a href="https://linkedin.com/in/thilina-rathnayake-551a731ba" target="_blank" className="text-gray-400 hover:text-blue-400 transition-colors">
+                <Linkedin size={24} />
+              </a>
             </div>
             <div className="border-t border-gray-700 pt-6 mt-6">
               <p className="text-gray-500 text-sm">
